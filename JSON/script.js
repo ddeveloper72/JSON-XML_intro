@@ -26,16 +26,13 @@ const userObj =
                 }
             ]`;
 
-
-console.log("3rd Example:\n", objects = JSON.parse(userObj));
-console.log("4th Example:\nThe name of the users's friend's 2nd friend is: "
-    + JSON.parse(userObj)[0].friends[0].friends[1].name
-    + "\nThe users's friend's 1st friend is: "
-    + JSON.parse(userObj)[0].friends[0].friends[0].name);
-
+// Parse the JSON string into a JavaScript object
 const user = JSON.parse(userObj)[0];
+
+// Get the content div
 const contentDiv = document.getElementById('content');
 
+// Create HTML content
 const userInfo = `
                 <h1>Users</h1>
                 <h2>User Information</h2>
@@ -65,3 +62,9 @@ const userInfo = `
             `;
 
 contentDiv.innerHTML = userInfo;
+
+console.log("3rd Example:\n", objects = JSON.parse(userObj));
+console.log("4th Example:\nThe name of the users's friend's 2nd friend is: "
+    + JSON.parse(userObj)[0].friends[0].friends[1].name
+    + "\nThe users's friend's 1st friend is: "
+    + JSON.parse(userObj)[0].friends[0].friends[0].name);
