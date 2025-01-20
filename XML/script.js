@@ -40,7 +40,7 @@ const users = xmlDoc.getElementsByTagName('user');
 const contentDiv = document.getElementById('content');
 
 // Create HTML content
-let htmlContent = "<h1>Users</h1><ul>";
+let htmlContent = "<h1>Users</h1>";
 
 for (let i = 0; i < users.length; i++) {
     const user = users[i];
@@ -49,43 +49,48 @@ for (let i = 0; i < users.length; i++) {
     const isPharmacist = user.getElementsByTagName('isPharmacist')[0].textContent;
     const friends = user.getElementsByTagName('friend');
 
-    console.log(user.getElementsByTagName('name')[0].textContent
-    );
-    
-    
-    let friendsNames = [];
-    if (name === 'John') {
-        for (let j = 0; j < friends.length; j++) {
-            const friendName = friends[j].getElementsByTagName('name')[0].textContent;
-            friendsNames.push(friendName);
+    let friendsArray = [];
+    for (let j = 0; j < friends.length; j++) {
+        const friend = friends[j];
+        const friendName = friend.getElementsByTagName('name')[0].textContent;
+        const friendFavoriteNumber = friend.getElementsByTagName('favoriteNumber')[0].textContent;
+        const friendIsPharmacist = friend.getElementsByTagName('isPharmacist')[0].textContent;
 
-            // Get friends of John's friend
-            const friendsOfFriend = friends[j].getElementsByTagName('friend');
-            let friendsOfFriendNames = [];
-            for (let k = 0; k < friendsOfFriend.length; k++) {
-                friendsOfFriendNames.push(friendsOfFriend[k].getElementsByTagName('name')[0].textContent);
-            }
-            if (friendsOfFriendNames.length > 0) {
-                friendsNames.push(`(${friendsOfFriendNames.join(', ')})`);
-            }
-        }
+        friendsArray.push({
+            name: friendName,
+            favoriteNumber: friendFavoriteNumber,
+            isPharmacist: friendIsPharmacist
+        });
     }
-    const friendsList = friendsNames.join(', ');
 
+    const userInfo = `
+        <h2>User Information</h2>
+        <p>Name: ${name}</p>
+        <p>Favorite Number: ${favoriteNumber}</p>
+        <p>Is Pharmacist: ${isPharmacist}</p>
+        <h3>Friends:</h3>
+        <ul>
+            ${friendsArray.slice(0, 1).map(friend => `
+                <li>
+                    <p>Name: ${friend.name}</p>
+                    <p>Favorite Number: ${friend.favoriteNumber}</p>
+                    <p>Is Pharmacist: ${friend.isPharmacist}</p>
+                    <h4>Friends:</h4>
+                    <ul>
+                        ${friendsArray.slice(1).map(subFriend => `
+                            <li>
+                                <p>Name: ${subFriend.name}</p>
+                                <p>Favorite Number: ${subFriend.favoriteNumber}</p>
+                                <p>Is Pharmacist: ${subFriend.isPharmacist}</p>
+                            </li>
+                        `).join('')}
+                </li>
+            `).join('')}
+        </ul>
+    `;
 
-
-
-    htmlContent += `<li><strong>Name:</strong> ${name}, <strong>Favorite Number:</strong> ${favoriteNumber}, <strong>Is Pharmacist:</strong> ${isPharmacist}</li>`;
-    
-    htmlContent += `<li><strong>Friends:</strong> ${friendsList}</li>`;
-    
-
-
-
-
+    htmlContent += userInfo;
 }
-
-htmlContent += "</ul>";
 
 // Insert the html content into the content div
 contentDiv.innerHTML = htmlContent;
