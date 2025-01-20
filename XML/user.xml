@@ -1,0 +1,26 @@
+<users>
+    <user>
+        <name>John</name>
+        <favoriteNumber>22</favoriteNumber>
+        <isPharmacist>true</isPharmacist>
+        <friends>
+            <friend>
+                <name>Jane</name>
+                <favoriteNumber>23</favoriteNumber>
+                <isPharmacist>false</isPharmacist>
+                <friends>
+                    <friend>
+                        <name>Alice</name>
+                        <favoriteNumber>24</favoriteNumber>
+                        <isPharmacist>true</isPharmacist>
+                    </friend>
+                    <friend>
+                        <name>Bob</name>
+                        <favoriteNumber>25</favoriteNumber>
+                        <isPharmacist>false</isPharmacist>
+                    </friend>
+                </friends>
+            </friend>
+        </friends>
+    </user>
+</users>

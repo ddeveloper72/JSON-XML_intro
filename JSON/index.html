@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Example</title>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script type="text/javascript">
+
+        let companies =
+            `[
+            {
+                "name": "Company 1",
+                "employees": 100,
+                "ceo": "John Doe"
+            },
+            {
+                "name": "Company 2",
+                "employees": 200,
+                "ceo": "Jane Doe"
+            },
+            {
+                "name": "Company 3",
+                "employees": 300,
+                "ceo": "Alice Doe"
+            }
+        ]`;
+
+        console.log("1st Example: \n", objects = JSON.parse(companies));
+
+        console.log("2nd Example: \n" + objects[0].name);
+
+    </script>
+
+
+    <script type="text/javascript">
+        let userObj =
+            `[
+                {
+                    "name": "John",
+                    "favoriteNumber": 22,
+                    "isPharmacist": true,
+                    "friends": [
+                        {
+                            "name": "Jane",
+                            "favoriteNumber": 23,
+                            "isPharmacist": false,
+                            "friends": [
+                                {
+                                    "name": "Alice",
+                                    "favoriteNumber": 24,
+                                    "isPharmacist": true
+                                },
+                                {
+                                    "name": "Bob",
+                                    "favoriteNumber": 25,
+                                    "isPharmacist": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]`;
+
+
+        console.log("3rd Example:\n", objects = JSON.parse(userObj));
+        console.log("4th Example:\nThe name of the users's friend's 2nd friend is: "
+            + JSON.parse(userObj)[0].friends[0].friends[1].name
+            + "\nThe users's friend's 1st friend is: "
+            + JSON.parse(userObj)[0].friends[0].friends[0].name);
+
+    </script>
+
+</body>
+
+</html>

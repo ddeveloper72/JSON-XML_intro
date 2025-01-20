@@ -1,0 +1,26 @@
+[
+  {
+    "name": "John",
+    "favoriteNumber": 22,
+    "isPharmacist": true,
+    "friends": [
+      {
+        "name": "Jane",
+        "favoriteNumber": 23,
+        "isPharmacist": false,
+        "friends": [
+          {
+            "name": "Alice",
+            "favoriteNumber": 24,
+            "isPharmacist": true
+          },
+          {
+            "name": "Bob",
+            "favoriteNumber": 25,
+            "isPharmacist": false
+          }
+        ]
+      }
+    ]
+  }
+]
