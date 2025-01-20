@@ -37,6 +37,7 @@ let user = JSON.parse(userObj)[0];
 let contentDiv = document.getElementById('content');
 
 let userInfo = `
+                <h1>Users</h1>
                 <h2>User Information</h2>
                 <p>Name: ${user.name}</p>
                 <p>Favorite Number: ${user.favoriteNumber}</p>
