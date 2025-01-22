@@ -1,0 +1,15 @@
+<XML-Introduction>
+    <sectionTitle>Section 1</sectionTitle>
+    <sectionDescription>XML stands for Extensible Markup Language.</sectionDescription>
+    <sectionDescription>
+        • It is a markup language much like HTML used to describe data.
+        • XML tags or marks, are not predefined in XML.
+        • You must define your own tags, so there for your could have any number of
+        different tags. This makes it Extensible
+        • XML is designed to store and transport data.
+        • XML is a W3C (world wide web consortium) Recommendation.
+        • XML is important to know, and very easy to learn.
+        • Data types are defined in XML Schema Definition (XSD) files.
+
+    </sectionDescription>
+</XML-Introduction> 
