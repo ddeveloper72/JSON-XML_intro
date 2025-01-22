@@ -1,0 +1,41 @@
+<XML-Introduction>
+    <sectionTitle>Section 2</sectionTitle>
+    <sectionDescription>Sample XML Dataset</sectionDescription>
+    <sectionDescription>
+        Like JSON, XML is human readable, but it is not as easy to read as JSON.
+        XML requires Syntax | Structure Validation to ensure it is well formed
+        according to predefined DTD or XSD Schema, sown in XML sample 3.
+        • DTD stands for Document Type Definition. It defines the structure and the legal elements
+        and attributes of an XML document.
+        • XSD stands for XML Schema Definition. It is a way to describe the structure of an XML
+        document.
+    </sectionDescription>
+    <sampleDataset>
+        <users>
+            <user>
+                <name>John</name>
+                <favoriteNumber>22</favoriteNumber>
+                <isPharmacist>true</isPharmacist>
+                <friends>
+                    <friend>
+                        <name>Jane</name>
+                        <favoriteNumber>23</favoriteNumber>
+                        <isPharmacist>false</isPharmacist>
+                        <friends>
+                            <friend>
+                                <name>Alice</name>
+                                <favoriteNumber>24</favoriteNumber>
+                                <isPharmacist>true</isPharmacist>
+                            </friend>
+                            <friend>
+                                <name>Bob</name>
+                                <favoriteNumber>25</favoriteNumber>
+                                <isPharmacist>false</isPharmacist>
+                            </friend>
+                        </friends>
+                    </friend>
+                </friends>
+            </user>
+        </users>
+    </sampleDataset>
+</XML-Introduction>
