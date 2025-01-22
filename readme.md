@@ -49,7 +49,7 @@ An example of the data is then shown in a web browser, demonstration two differe
     - GET URL: https://jsonplaceholder.typicode.com/users?_id=1
   - New Request - Search username
     - GET URL: https://jsonplaceholder.typicode.com/users?username=Bret
-    
+
 - [HAPI FHIR Server](http://hapi.fhir.org/)
   - New Request - Search by Patient Name
     - GET URL: http://hapi.fhir.org/baseR4/Patient?name=Bob
