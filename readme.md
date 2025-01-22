@@ -6,9 +6,9 @@ This material is intend for use as a light touch over view of what a JSON object
 
 Both data types are used by API services around the world for the purpose of exchanging information between different systems.
 
-Each subject is broken into 3 bit-size sections, looking at the same information in JSON and XML format.
+Each subject is broken into 3 bite-size sections, looking at the same information in JSON and XML format.
 
-An example of the data is then shown in a web browser, demonstration two different data storage routes, producing the same outcome for ourselves, an user.
+An example of the data is then shown in a web browser, to demonstrate the two different data storage routes, producing the same outcome for the end-user.
 
 ## Learning Outcomes
 
