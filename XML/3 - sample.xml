@@ -1,0 +1,71 @@
+<XML-Introduction>
+    <sectionTitle>Section 2</sectionTitle>
+    <sectionDescription>Sample XML Dataset</sectionDescription>
+    <sectionDescription>
+        Like JSON, XML is human readable, but it is not as easy to read as JSON.
+        XML requires Syntax | Structure Validation to ensure it is well formed
+        according to predefined DTD or XSD Schema.
+        • DTD stands for Document Type Definition. It defines the structure and the legal elements
+        and attributes of an XML document.
+        • XSD stands for XML Schema Definition. It is a way to describe the structure of an XML
+        document.
+    </sectionDescription>
+    <sampleXSDSchema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:element name="users">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="user" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string" />
+                                    <xs:element name="favoriteNumber" type="xs:int" />
+                                    <xs:element name="isPharmacist" type="xs:boolean" />
+                                    <xs:element name="friends" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="friend" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="name" type="xs:string" />
+                                                            <xs:element name="favoriteNumber"
+                                                                type="xs:int" />
+                                                            <xs:element name="isPharmacist"
+                                                                type="xs:boolean" />
+                                                            <xs:element name="friends" minOccurs="0">
+                                                                <xs:complexType>
+                                                                    <xs:sequence>
+                                                                        <xs:element name="friend"
+                                                                            maxOccurs="unbounded">
+                                                                            <xs:complexType>
+                                                                                <xs:sequence>
+                                                                                    <xs:element
+                                                                                        name="name"
+                                                                                        type="xs:string" />
+                                                                                    <xs:element
+                                                                                        name="favoriteNumber"
+                                                                                        type="xs:int" />
+                                                                                    <xs:element
+                                                                                        name="isPharmacist"
+                                                                                        type="xs:boolean" />
+                                                                                </xs:sequence>
+                                                                            </xs:complexType>
+                                                                        </xs:element>
+                                                                    </xs:sequence>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </sampleXSDSchema>
+</XML-Introduction>
