@@ -1,7 +1,7 @@
 {
   "section": 2,
 
-  "DataTypes": [
+  "dataTypes": [
     {
       "Number": [1, 2, 3, 1.5, -2.5, 1.2e10],
       "String": ["John", "Doe"],
@@ -13,7 +13,7 @@
     }
   ],
 
-  "Key-ValuePairs": [
+  "keyValuePairs": [
     "• JSON data is written as key-value pairs.",
     "• Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean, null)."
   ],

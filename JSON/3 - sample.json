@@ -1,7 +1,7 @@
 {
   "section": 3,
 
-  "BasicPrinciples": {
+  "basicPrinciples": {
     "keyValuePairs": {
       "description": "Keys are properties of the object, and values are the data stored in the properties.",
       "properties": "Properties are surrounded by double quotes, the same as strings.",
@@ -12,7 +12,7 @@
     }
   },
 
-  "Example": "In this Example, the object below can be saved to a JSON file, eg user.json:",
+  "example": "In this Example, the object below can be saved to a JSON file, eg user.json:",
   
   "sampleObject": [
     {
