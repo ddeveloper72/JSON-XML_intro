@@ -2,6 +2,8 @@
 
 ## Objective
 
+Fast Healthcare Interoperability Resources (FHIR®)is a data standard designed to make the exchanged of data interoperable between different healthcare systems.
+
 This material is intend for use as a light touch over view of what a JSON object is and what an XML document is.
 
 Both data types are used by API services around the world for the purpose of exchanging information between different systems.
