@@ -30,7 +30,7 @@ const userObj =
 const user = JSON.parse(userObj)[0];
 
 // Get the content div
-const contentDiv = document.getElementById('content');
+const contentDiv1 = document.getElementById('json-content');
 
 // Create HTML content
 const userInfo = `
@@ -61,7 +61,7 @@ const userInfo = `
                 </ul>
             `;
 
-contentDiv.innerHTML = userInfo;
+contentDiv1.innerHTML = userInfo;
 
 console.log("1st Example:\n", objects = JSON.parse(userObj));
 console.log("2nd Example:\nThe name of the users's friend's 2nd friend is: "
