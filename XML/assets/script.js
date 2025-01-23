@@ -37,7 +37,7 @@ const xmlDoc = parser.parseFromString(xmlString, 'application/xml');
 const users = xmlDoc.getElementsByTagName('user');
 
 // Get the content div
-const contentDiv = document.getElementById('content');
+const contentDiv2 = document.getElementById('xml-content');
 
 // Create HTML content
 let htmlContent = "<h1>Users</h1>";
@@ -93,4 +93,4 @@ for (let i = 0; i < users.length; i++) {
 }
 
 // Insert the html content into the content div
-contentDiv.innerHTML = htmlContent;
+contentDiv2.innerHTML = htmlContent;
