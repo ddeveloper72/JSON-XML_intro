@@ -10,7 +10,7 @@ Both data types are used by API services around the world for the purpose of exc
 
 Each subject is broken into 3 bite-size sections, looking at the same information in JSON and XML format.
 
-An example of the data is then shown in a web browser, to demonstrate the two different data storage routes, producing the same outcome for the end-user.
+[An example of the data is then shown in a web browser](https://ddeveloper72.github.io/JSON-XML_intro/), to demonstrate the two different data storage routes, producing the same outcome for the end-user.
 
 ## Learning Outcomes
 
